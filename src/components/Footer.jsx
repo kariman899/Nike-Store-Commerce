@@ -4,7 +4,7 @@ export default function Footer({ footerAPI: { titles, links } }) {
   return (
     <>
       <footer className="bg-theme text-slate-200 ">
-        <div className="nike-container py-4  max-w-4xl w-full m-auto md:max-w-none" >
+        <div className="nike-container py-4  max-w-4xl m-auto md:max-w-none" >
           <div className=" grid grid-cols-3 " >
             {titles.map((val, i) => (
               <div key={i}>
