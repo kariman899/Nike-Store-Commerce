@@ -39,7 +39,7 @@ export default function Navbar() {
   return (
     <>
       <header className={!navState ? `absolute top-4 right-0 left-0 opacity-100 z-50` : `fixed 
-      top-0 left-0 right-0 h-[9vh] opacity-100 z-50 blur-effect-theme flex justify-center`}>
+      top-0 left-0 right-0 h-[9vh]  md:h-[8vh] opacity-100 z-50 blur-effect-theme flex justify-center`}>
         <nav className=" nike-container flex justify-between items-center">
           <div>
             <img src={logo} alt="" className={`w-14 ${navState && "brightness-0"}`}/>
