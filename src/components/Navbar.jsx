@@ -47,7 +47,7 @@ export default function Navbar() {
           <div className="">
               <button onClick={onCartToggle} className=" relative transition-all duration-300 active:scale-110 border-none outline-none">
                 <ShoppingBagIcon className={`icon-style sm:h-6 sm:w-6 ${navState && " text-slate-900 transition-all duration-300"}`} />
-                <div className={`absolute top-4 sm:top-3 -right-1 w-5 h-5 sm:w-4 sm:h-4 rounded-full 
+                <div className={`absolute top-4 sm:top-3 -right-1 w-5 h-5 rounded-full 
                  text-[0.75rem] sm:text-[0.65rem] flex items-center justify-center cursor-pointer transition-all duration-300 hover:scale-110  ${navState ? ` bg-slate-900 text-slate-100 shadow-slate-900 `:
                  ` bg-slate-100 text-slate-900 shadow-slate-100`} `}>{totalQTY}</div>
               </button>
