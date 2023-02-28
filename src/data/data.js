@@ -97,7 +97,7 @@ const toprateslaes = {
       title: "Nike Air Low Premium",
       text: "MEN Running Shoes",
       rating: "5+",
-      btn: "Buy Now",
+      btn: "Add to cart",
       img: product7,
       price: "150",
       color: "from-sky-600 to-indigo-600",
