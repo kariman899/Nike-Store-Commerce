@@ -40,7 +40,7 @@ export default function Stories({ story: { title, news } }) {
                     />
                   </div>
                   <div className=" flex  xsm:block items-center justify-between px-4">
-                    <div className="flex gap-1 xsm:justify-between">
+                    <div className="flex gap-6 sm:gap-2 xsm:justify-between">
                       <div className="flex gap-0.5 items-center">
                         <HeartIcon className="icon-style text-red-600 w-5  h-5 "></HeartIcon>
                         <span className=" font-bold text-xs xsm:text-[12px] ">
