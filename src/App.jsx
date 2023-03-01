@@ -26,7 +26,6 @@ export default function App() {
       <Cart></Cart>
       <main className=" flex flex-col gap-16 ">
         <Hero heroapi={heroapi}></Hero>
-        {/* خدوا نفس الاسم علشان يظهر الاتنين داتا مع بعض  */}
         <Sales endpoint={popularsales} ifExist></Sales>
         <FlexContent endpoint={highlight} ifExist></FlexContent>
         <Sales endpoint={toprateslaes}></Sales>

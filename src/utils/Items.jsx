@@ -36,8 +36,8 @@ export default function Items({
             ifExist ? `justify-items-start` : `justify-items-center`
           } `}
         >
-          <h2 className=" text-xl font-semibold drop-shadow-lg">{title}</h2>
-          <p className=" text-base mb-1">{text}</p>
+          <h2 className=" text-xl sm:text-base font-semibold drop-shadow-lg">{title}</h2>
+          <p className=" text-base sm:text-sm mb-1">{text}</p>
 
           <div className=" flex items-center justify-between w-32 mt-1">
             <div className=" bg-slate-200  px-1 rounded text-slate-900 shadow">
@@ -61,14 +61,14 @@ export default function Items({
         {/* img */}
         <div
           className={`mt-3 flex items-center justify-center mx-1 ${
-            ifExist ? `absolute top-0 right-1` : ``
+            ifExist ? `absolute top-0 right-1 sm:top-3` : ``
           }`}
         >
           <img
             src={img}
             alt={`img/item-img/${id}`}
             className={` ${
-              ifExist ? ` w-60 h-auto -rotate-[35deg] ` : ` w-65 h-36  `
+              ifExist ? ` w-60 sm:w-44 h-auto -rotate-[35deg] ` : ` w-65 sm:w-56 h-36 sm:h-32  `
             } transitions-theme hover:-rotate-12 `}
           />
         </div>
