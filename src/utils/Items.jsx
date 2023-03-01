@@ -55,7 +55,7 @@ export default function Items({
             <button type="button">
               <ShoppingBagIcon className={`" icon-style text-slate-900 mr-1" ${ifExist ? "small-icon":""}`} />
             </button>
-            <button className={`text-slate-900 ${ifExist ? "sm:pt-0.5n":""}`}>{btn}</button>
+            <button className={`text-slate-900 ${ifExist ? "sm:pt-0.5":""}`}>{btn}</button>
           </div>
         </div>
         {/* img */}
