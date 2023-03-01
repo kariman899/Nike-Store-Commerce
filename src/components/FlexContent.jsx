@@ -15,7 +15,7 @@ export default function FlexContent({ ifExist,endpoint : {heading,title,text,btn
         </a>
     </div>
     <div className=' max-w-xl lg:max-w-none w-full flex justify-center'>
-        <img src={img} alt="" className={` h-60 lg:h-56 md:h-52 sm:h-44 w-auto object-fill transitions-theme ${ifExist ? ` rotate-6 hover:-rotate-12 md:mt-4 `:` rotate-[20deg] hover:rotate-12`} `} />
+        <img src={img} alt="" className={` h-60 lg:h-56 md:h-52 sm:h-44 w-auto object-fill transitions-theme ${ifExist ? ` rotate-6 hover:-rotate-12 md:mt-4 `:` rotate-[20deg] sm:rotate-[10deg] hover:rotate-12`} `} />
     </div>
     </div>
     
