@@ -82,3 +82,20 @@
 .splide__arrow {
   visibility: hidden;
 }
+@media (max-width: 320px) {
+  .popular-img {
+    width: 14ch;
+   }
+   .text-small{
+    font-size: 13px;
+   }
+  
+  }
+  @media (min-width: 320px) and (max-width :550px) {
+    .popular-img {
+      width: 18ch;
+     }
+     .text-small{
+      font-size: 13px;
+     }
+    }

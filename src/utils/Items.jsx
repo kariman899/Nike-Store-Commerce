@@ -37,25 +37,25 @@ export default function Items({
           } `}
         >
           <h2 className=" text-xl sm:text-base font-semibold drop-shadow-lg">{title}</h2>
-          <p className=" text-base sm:text-sm mb-1">{text}</p>
+          <p className=" text-base sm:text-[13px] mb-1 xsm:mb-0.5">{text}</p>
 
           <div className=" flex items-center justify-between w-32 mt-1">
             <div className=" bg-slate-200  px-1 rounded text-slate-900 shadow">
               {" "}
-              <h3>{price} $</h3>{" "}
+              <h3 className="xsm:text-sm">{price} $</h3>{" "}
             </div>
             <div className="flex items-center">
               {" "}
-              <StarIcon className=" icon-style  mr-1" />
-              <span className=" font-normal">{rating}</span>{" "}
+              <StarIcon className=" icon-style xsm:w-4 xsm:h-4  mr-1" />
+              <span className=" font-normal xsm:text-sm">{rating}</span>{" "}
             </div>
           </div>
 
-          <div className=" shadow rounded bg-slate-200 px-2 py-1 flex items-center mt-3 text-sm"  onClick={onAddToCart}>
+          <div className={`shadow rounded bg-slate-200 px-2 py-1 flex items-center mt-3 text-sm ${ ifExist ?"text-small":""}`}  onClick={onAddToCart}>
             <button type="button">
-              <ShoppingBagIcon className=" icon-style text-slate-900 mr-1" />
+              <ShoppingBagIcon className={`" icon-style text-slate-900 mr-1" ${ifExist ? "small-icon":""}`} />
             </button>
-            <button className="text-slate-900">{btn}</button>
+            <button className="text-slate-900 ">{btn}</button>
           </div>
         </div>
         {/* img */}
@@ -68,7 +68,7 @@ export default function Items({
             src={img}
             alt={`img/item-img/${id}`}
             className={` ${
-              ifExist ? ` w-60 sm:w-44 h-auto -rotate-[35deg] ` : ` w-65 sm:w-56 h-36 sm:h-32  `
+              ifExist ? ` popular-img w-60   h-auto -rotate-[35deg] ` : ` w-65 sm:w-56 h-36 sm:h-32  `
             } transitions-theme hover:-rotate-12 `}
           />
         </div>
