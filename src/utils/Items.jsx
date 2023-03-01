@@ -51,11 +51,11 @@ export default function Items({
             </div>
           </div>
 
-          <div className={`shadow rounded bg-slate-200 px-2 py-1 flex items-center mt-3 text-sm ${ ifExist ?"text-small":""}`}  onClick={onAddToCart}>
+          <div className={`shadow rounded bg-slate-200 px-2 py-1 flex items-center mt-3 ${ ifExist ?"text-small":""}`}  onClick={onAddToCart}>
             <button type="button">
               <ShoppingBagIcon className={`" icon-style text-slate-900 mr-1" ${ifExist ? "small-icon":""}`} />
             </button>
-            <button className="text-slate-900 ">{btn}</button>
+            <button className={`text-slate-900 ${ifExist ? "sm:pt-0.5n":""}`}>{btn}</button>
           </div>
         </div>
         {/* img */}
