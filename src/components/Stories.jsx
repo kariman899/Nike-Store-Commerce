@@ -39,10 +39,10 @@ export default function Stories({ story: { title, news } }) {
                       className=" object-cover w-full h-auto rounded-tr-lg rounded-tl-lg"
                     />
                   </div>
-                  <div className=" flex  xsm:block items-center justify-between px-4">
-                    <div className="flex gap-6 sm:gap-2 xsm:justify-between">
+                  <div className=" flex  sm:block items-center justify-between px-4">
+                    <div className="flex gap-6 sm:gap-2 justify-between">
                       <div className="flex gap-0.5 items-center">
-                        <HeartIcon className="icon-style text-red-600 w-5  h-5 "></HeartIcon>
+                        <HeartIcon className="icon-style text-red-600 w-5 h-5 "></HeartIcon>
                         <span className=" font-bold text-xs xsm:text-[12px] ">
                           {val.like}
                         </span>
@@ -54,7 +54,7 @@ export default function Stories({ story: { title, news } }) {
                         </span>
                       </div>
                     </div>
-                    <div className="flex  gap-0.5 items-center xsm:mt-2 ">
+                    <div className="flex  gap-0.5 items-center sm:mt-2 ">
                       <HashtagIcon className="icon-style text-blue-600 w-5 h-5 "></HashtagIcon>
                       <span className=" font-bold text-xs text-blue-600 xsm:text-[12px]">
                         {val.by}
