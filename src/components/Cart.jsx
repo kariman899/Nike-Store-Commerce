@@ -44,7 +44,7 @@ export default function () {
         >
           <CountCart totalQTY={totalQTY} onCartToggle={onCartToggle}></CountCart>
           {cartItems.length === 0 ? <EmptyCart onCartToggle={onCartToggle}></EmptyCart> : <div></div>}
-          <div className="pb-5 overflow-y-scroll h-[100vh] scroll-smooth scroll-hidden">
+          <div className="pb-5 overflow-y-scroll h-[80vh] scroll-smooth scroll-hidden">
             {cartItems?.map((item, i) => (
               <ItemsCart key={i} item={item}></ItemsCart>
             ))}
