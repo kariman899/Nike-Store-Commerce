@@ -14,8 +14,8 @@ export default function FlexContent({ ifExist,endpoint : {heading,title,text,btn
             <button className=' button-theme bg-slate-900 shadow-slate-900 text-slate-100 py-1.5'>{btn}</button>
         </a>
     </div>
-    <div className=' max-w-xl lg:max-w-none w-full flex justify-center'>
-        <img src={img} alt="" className={` h-60 lg:h-56 md:h-52 sm:h-44 w-auto object-fill transitions-theme ${ifExist ? ` rotate-6 hover:-rotate-12 md:mt-4 `:` rotate-[20deg] sm:rotate-[10deg] hover:rotate-12`} `} />
+    <div className='max-w-xl lg:max-w-none w-full flex justify-center'>
+        <img src={img} alt="" className={`h-60 lg:h-56 md:h-52 sm:h-44 w-auto object-fill transitions-theme ${ifExist ? ` rotate-6 hover:-rotate-12 xsm:rotate-[3deg] xsm:h-32 md:mt-4 `:`  rotate-[20deg] sm:rotate-[10deg] xsm:rotate-[8deg] hover:rotate-12 xsm:hover:rotate-1`} `} />
     </div>
     </div>
     
