@@ -33,10 +33,10 @@ export default function Items({
         {/* content */}
         <div
           className={`grid items-center ${
-            ifExist ? `justify-items-start` : `justify-items-center`
+            ifExist ? `justify-items-start` : `justify-items-center  text-center`
           } `}
         >
-          <h2 className=" text-xl sm:text-base font-semibold drop-shadow-lg">{title}</h2>
+          <h2 className=" text-xl lg:text-lg sm:text-base font-semibold drop-shadow-lg">{title}</h2>
           <p className=" text-base sm:text-[13px] mb-1 xsm:mb-0.5">{text}</p>
 
           <div className=" flex items-center justify-between w-32 mt-1">
@@ -68,7 +68,7 @@ export default function Items({
             src={img}
             alt={`img/item-img/${id}`}
             className={` ${
-              ifExist ? ` popular-img w-60   h-auto -rotate-[35deg] ` : ` w-65 sm:w-56 h-36 sm:h-32  `
+              ifExist ? ` popular-img w-60   h-auto -rotate-[35deg] ` : ` w-65 sm:w-56 h-32 lg:h-28  `
             } transitions-theme hover:-rotate-12 `}
           />
         </div>
