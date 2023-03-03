@@ -62,7 +62,7 @@ export default function ItemsCart({
             </div>
           </div>
         </div>
-        <div className=" grid justify-between xsm:gap-5 ">
+        <div className=" grid justify-between xsm:gap-5 md:items-center ">
           <div>
             <span className=" text-slate-900 xsm:text-sm ">${price * cartQuantity}</span>
           </div>
