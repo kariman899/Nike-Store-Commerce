@@ -31,8 +31,8 @@ export default function ItemsCart({
   }
   return (
     <>
-    <div className="flex justify-between p-4 xsm:px-1.5 xsm:py-2  items-center">
-        <div className="flex gap-5 xsm:gap-2  items-center ">
+    <div className="flex justify-between p-4 xsm:px-1.5 xsm:py-2">
+        <div className="flex gap-5 xsm:gap-2  md:items-center">
           <div
             className={` bg-gradient-to-b ${color} ${shadow} p-3 rounded relative 
           transition-all duration-200 ease-in-out hover:scale-105`}
@@ -66,7 +66,7 @@ export default function ItemsCart({
           <div>
             <span className=" text-slate-900 xsm:text-sm ">${price * cartQuantity}</span>
           </div>
-          <div className=" grid items-center justify-center ">
+          <div className=" grid items-center justify-center md:items-center ">
             <button
               className="bg-theme-cart text-slate-200 rounded shadow shadow-slate-900 
           active:scale-90 p-1 cursor-pointer"
